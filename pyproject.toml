@@ -1,0 +1,24 @@
+[project]
+name = "mcp-hr-work"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "black>=25.9.0",
+    "fastmcp>=2.12.4",
+    "gitpython>=3.1.45",
+    "ipywidgets==8.1.2",
+    "langchain>=0.3.27",
+    "langchain-community>=0.3.30",
+    "langchain-core>=0.3.77",
+    "langchain-groq>=0.3.8",
+    "langgraph>=0.6.8",
+    "matplotlib==3.8.4",
+    "pandas==2.2.2",
+    "pypdf>=6.1.1",
+    "pypdf2>=3.0.1",
+    "python-dotenv>=1.1.1",
+    "streamlit>=1.50.0",
+    "tqdm==4.66.4",
+]
