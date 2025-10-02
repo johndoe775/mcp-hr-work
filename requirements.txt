@@ -1,0 +1,16 @@
+ipywidgets==8.1.2
+matplotlib==3.8.4
+pandas==2.2.2
+tqdm==4.66.4
+langchain-groq
+python-dotenv
+langgraph
+langchain_core
+langchain 
+langchain_community
+gitpython
+pypdf
+streamlit
+PyPDF2
+black
+fastmcp
