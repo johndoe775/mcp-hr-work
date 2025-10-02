@@ -4,7 +4,7 @@ from langchain.prompts import PromptTemplate
 
 
 
-with open(r"C:\Users\jorda\Downloads\projects\mcp\mcp-hr-work\prompts.yaml", "r") as file:
+with open(r"C:\Users\jorda\Downloads\projects\mcp\mcp-hr-work\src\prompts.yaml", "r") as file:
         data = yaml.safe_load(file)
 class tool_maker:
     def __init__(self, resume, job_description: str = None, personal_info:str=None):
