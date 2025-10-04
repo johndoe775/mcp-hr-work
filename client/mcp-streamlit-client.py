@@ -22,7 +22,7 @@ import yaml
 from llm import LLM
 
 with open(
-    r"C:\Users\jorda\Downloads\projects\mcp\mcp-hr-work\prompts.yaml", "r"
+    r"C:\Users\jorda\Downloads\projects\mcp\mcp-hr-work\src\prompts.yaml", "r"
 ) as file:
     data = yaml.safe_load(file)
 tool_keys = list(data.keys())
@@ -93,7 +93,7 @@ if st.button("Select Tool with LLM"):
         client = Client("http://localhost:8000/mcp")
         async with client:
             tools = await client.list_tools()
-            tool_keys = [t["name"] for t in tools]
+            tool_keys = [t.name for t in tools]
             selected_tool = llm_decide_tool(
                 resume, job_description, personal_info, tool_keys
             )
