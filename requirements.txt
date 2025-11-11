@@ -1,0 +1,16 @@
+fastmcp
+pandas
+yfinance
+black
+pylint
+langchain
+langchain-groq
+python-dotenv
+PyPDF2
+langgraph
+pandasql
+streamlit
+mcp[cli]
+scikit-learn
+matplotlib
+seaborn
