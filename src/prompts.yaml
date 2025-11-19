@@ -111,7 +111,7 @@ apply_mail_from_linkedin_post:
     6) End with "Regards," followed by the candidate’s name from the resume.
     8)  Ensure proper formatting and readability in markdown (e.g., paragraphs, line breaks).
     9) Do not use any markdown symbols such as **, *, or - in the output. 
-        Instead, use tabs or indentation to organize the answers clearly..
+    10)Instead, use tabs or indentation to organize the answers clearly..
     """
   inputs:
     {"resume": "resume", "job_post": "job_post"}
