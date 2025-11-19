@@ -93,3 +93,25 @@ followup_mail_from_resume:
   inputs:
     {"resume": "resume", "questions": "questions"}
 
+apply_mail_from_linkedin_post:
+  tool_use_case: "Use this tool to write a short, professional email when applying for a job found on LinkedIn, ensuring alignment with both the post description and resume."
+  prompt: |
+    """
+    Write a professional email (maximum five lines) applying for a job mentioned in a LinkedIn post.
+
+    Resume: {resume}
+    Job Post Description: {job_post}
+
+    Instructions:
+    1) Use only the relevant experience, skills, and achievements from the resume that match the job description.
+    2) Keep the email concise (no more than five lines total).
+    3) Maintain a polite, confident, and professional tone suitable for a job application.
+    4) Begin with "Hi," and mention that the job was seen on LinkedIn.
+    5) Express clear interest in the position and show brief alignment with the role.
+    6) End with "Regards," followed by the candidate’s name from the resume.
+    7) Do not include any additional comments, markdown formatting, or meta text.
+    """
+  inputs:
+    {"resume": "resume", "job_post": "job_post"}
+
+
