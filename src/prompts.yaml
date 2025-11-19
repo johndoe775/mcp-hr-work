@@ -109,7 +109,9 @@ apply_mail_from_linkedin_post:
     4) Begin with "Hi," and mention that the job was seen on LinkedIn.
     5) Express clear interest in the position and show brief alignment with the role.
     6) End with "Regards," followed by the candidate’s name from the resume.
-    7) Do not include any additional comments, markdown formatting, or meta text.
+    8)  Ensure proper formatting and readability in markdown (e.g., paragraphs, line breaks).
+    9) Do not use any markdown symbols such as **, *, or - in the output. 
+        Instead, use tabs or indentation to organize the answers clearly..
     """
   inputs:
     {"resume": "resume", "job_post": "job_post"}
