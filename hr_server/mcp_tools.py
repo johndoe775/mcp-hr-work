@@ -9,12 +9,13 @@ with open(r"C:\Users\jorda\Downloads\my_stuff\projects\mcp-hr-work-main\src\prom
 
 
 class tool_maker:
-    def __init__(self, resume:str , job_description: str = None, personal_info: str = None,questions: str = None):
+    def __init__(self, resume:str , job_description: str = None, personal_info: str = None,questions: str = None,job_post: str = None):
         self.resume = resume
         self.job_description = job_description
         self.personal_info = personal_info
         self.questions = questions
         self.data = data
+        self.job_post = job_post
 
     def llm_fx(self, key) -> str:
         f"""{self.data[key]["tool_use_case"]}"""

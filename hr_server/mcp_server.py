@@ -49,6 +49,13 @@ def followup_email(resume:str, questions:str, job_description="", personal_info=
     )
     return response
 
+@mcp.tool
+def linkedin_apply_email(resume:str, job_post:str, job_description="", personal_info="", questions="") -> str:
+    "use this tool to write a short professional email (max five lines) applying for a job from a LinkedIn post."
+    response = tool_maker(resume, job_description, personal_info, questions, job_post).linkedin_gen(
+        list(data.keys())[4]
+    )
+    return response
 
 if __name__ == "__main__":
     mcp.run(transport="stdio")
