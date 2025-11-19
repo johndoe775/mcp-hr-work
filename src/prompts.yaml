@@ -106,12 +106,14 @@ apply_mail_from_linkedin_post:
     1) Use only the relevant experience, skills, and achievements from the resume that match the job description.
     2) Keep the email concise (no more than five lines total).
     3) Maintain a polite, confident, and professional tone suitable for a job application.
-    4) Begin with "Hi," and mention that the job was seen on LinkedIn.
-    5) Express clear interest in the position and show brief alignment with the role.
-    6) End with "Regards," followed by the candidate’s name from the resume.
+    4) Start with the salutation "Hi,".
+    5) Mention that the job was seen on LinkedIn and express clear interest in the position and show brief alignment with the role.
+    6) End with "Regards," 
+    7)followed by the candidate’s name from the resume in the next line.
     8)  Ensure proper formatting and readability in markdown (e.g., paragraphs, line breaks).
     9) Do not use any markdown symbols such as **, *, or - in the output. 
     10)Instead, use tabs or indentation to organize the answers clearly..
+    11) Structure the email appropriately with a clear beginning, middle, and end.
     """
   inputs:
     {"resume": "resume", "job_post": "job_post"}
