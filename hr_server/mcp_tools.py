@@ -49,3 +49,21 @@ class tool_maker:
         response = chain.invoke(self.data[key]["inputs"]).content
 
         return response
+    
+
+    def linkedin_gen(self, key='apply_mail_from_linkedin_post') -> str:
+        f"""{self.data[key]["tool_use_case"]}"""
+        
+        input_variables = list(self.data[key]["inputs"].keys())
+        
+        template = self.data[key]["prompt"].format(
+            resume=self.resume,
+            job_post=self.job_post
+        )
+        prompt_template = PromptTemplate(
+            input_variables=input_variables, template=template
+        )
+        chain = prompt_template | LLM().llm
+        response = chain.invoke(self.data[key]["inputs"]).content
+
+        return response
